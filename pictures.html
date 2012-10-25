@@ -54,10 +54,23 @@ li {
    font-style: italic;
    color: #fff;
 }
+ 
+#slideshow {
+  float:right;
+  margin-right: 200px;
+}
+#slideshow img{
+   width :700px;
+   height : 520px;
+   margin-right: 100px;
+}
+
 body {background-image:url('./background.png');}
  
 --> 
 </style> 
+    <script src='jquery-1.8.2.min.js'></script>
+    <script src='jquery.cycle.all.js'></script>
 </head> 
 <body> 
 <div id="navbar"> 
@@ -65,16 +78,21 @@ body {background-image:url('./background.png');}
         <li><a href="#">About</a></li><li><a href="#">Menu</a></li><li><a href="pictures.html">Pictures</a></li><li><a href="directions.html">Directions</a></li> 
   </ul> 
 </div>
+<body>
+    <div id='slideshow'>
+      <img src='image1.jpeg'/>
+      <img src='image2.jpeg'/>
+      <img src='image3.png'/>
+      <img src='image4.jpeg'/>
+ 
+    </div>
+    <script>
+      $(function() {
+        $('#slideshow').cycle();
+        });     
+    </script>
+  </body>
 
-
-<p id = "address"><img class="gelatoimg1" src="./gelato1.png" alt="gelato"/><br><br>Our gelato is made with real fruit and the highest quality ingredients. <br><br>308 Watertown Street  Newton, MA 02458<br/>
-(617) 795-0213</p>
-<p id = "hours">
-  <img class = "gelatoimg2" src = "./gelato2.png"></img>
-  <br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are open:<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Hours</b>:  Mon. - Sat. | 11am to 10pm<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sunday | 1pm to 7pm
-</p> 
 </body> 
 </html>
 
